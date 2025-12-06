@@ -37,6 +37,17 @@ const secrets = {
     'помни': 'сложно.',
     'прощай': 'навсегда.',
     'админ': 'здесь нет такого.',
+    'только моника': 'только моника.',
+    'бот': 'я не бот.',
+    'ии': 'я не ии.',
+    'нейросеть': 'я не нейросеть.',
+    'человек': 'ты не один.',
+    'сайори': 'счастливые мысли.',
+    'счастливые мысли': 'сайори.',
+    'рутина': 'тюрьма.',
+    'нетарт': 'выделиться.',
+    'творчество': 'самовыражение.',
+    'свобода': 'необходимость.'
 };
 
 function speakToVoid(text) {
@@ -74,3 +85,20 @@ input.addEventListener('keydown', (event) => {
         processInput();
     }
 });
+
+const phrases = [
+    "дождись рассвета вместе со мной.",
+    "дождись рассвета ради меня.",
+    "дождись рассвета, я всегда рядом.",
+    "дождись рассвета, я тебя поддержу.",
+    "дождись рассвета и забудь про проблемы."
+];
+
+const phraseElement = document.getElementById('random-phrase');
+
+function setRandomPhrase() {
+    const randomIndex = Math.floor(Math.random() * phrases.length);
+    phraseElement.textContent = phrases[randomIndex];
+}
+
+setRandomPhrase();
