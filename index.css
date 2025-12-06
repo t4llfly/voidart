@@ -1,0 +1,44 @@
+body {
+    background-color: #ffffff;
+    color: #272727;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+#girls {
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 50%;
+}
+
+#about {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    font-size: 0.9rem;
+    color: #555555;
+    display: flex;
+    gap: 4px;
+    user-select: none;
+}
+
+#void-response {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    min-height: 2rem;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
