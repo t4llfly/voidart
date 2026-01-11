@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+ void-app:
+    container_name: void-app
+    build: .
+    restart: always
+    ports:
+      - "3001:80"
